@@ -10,8 +10,7 @@
             </md-button>
         </div>
         <div class="products_items" v-scroll-reveal.reset="{delay:500}">
-            <md-card v-for="(product,index) in products" :key="index" v-show="productType===product.type">
-
+            <md-card v-for="(product,index) in products" :key="index" v-show="product.type===productType">
                 <md-card-media md-ratio="16:9">
                     <img :src="require(`../../assets/images/products/${product.img}`)" />
                 </md-card-media>
@@ -67,8 +66,6 @@ export default {
                 })
             }
             this.products = list;
-        }, response => {
-            console.log(response.body, response.status);
         });
 
     },

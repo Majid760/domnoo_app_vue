@@ -4,6 +4,7 @@
     <div>
         <compFeatured></compFeatured>
         <compMenu></compMenu>
+        <compCallUs></compCallUs>
     </div>
     <compFooter></compFooter>
 </div>
@@ -14,6 +15,7 @@ import compHeader from './components/header-footer/Header.vue'
 import compFooter from './components/header-footer/Footer.vue'
 import compFeatured from './components/featured/index.vue'
 import compMenu from './components/menu/index.vue'
+import compCallUs from './components/callus/index.vue'
 
 export default {
     data() {
@@ -25,7 +27,8 @@ export default {
         compFooter,
         compHeader,
         compFeatured,
-        compMenu
+        compMenu,
+        compCallUs
     }
 
 }
