@@ -40,10 +40,11 @@ export default {
 
         }
     },
+
     components: {
         Carousel,
         Slide
-    }
+    },
 
 }
 </script>
